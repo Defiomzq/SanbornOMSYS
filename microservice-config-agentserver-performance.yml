@@ -5,16 +5,12 @@
 ---
 server:
   port: 8001
+
 spring:
   profiles: agent8001   #
   application:
-    name: microservice-config-agentserver-performance
- 
-    
-spring:
-   application:
-    name: microservice-agentserver-performance-8001   #注册进eureka的微服务名称，将显示为大写
-   
+    name: microservice-config-agentserver-performance-8001 
+  
       
 eureka:
   client: #客户端注册进eureka服务列表内
