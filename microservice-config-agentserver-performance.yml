@@ -9,7 +9,7 @@ server:
 spring:
   profiles: agent8001   #
   application:
-    name: microservice-config-agentserver-performance-8001 
+    name: microservice-config-agentserver-performance 
   
       
 eureka:
