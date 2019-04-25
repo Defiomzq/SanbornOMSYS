@@ -1,0 +1,25 @@
+﻿spring:
+  profiles:
+   active:
+   - dev
+---
+server:
+  port: 8001
+spring:
+  profiles: agent8001   #
+  application:
+    name: microservice-config-agentserver-performance
+ 
+    
+spring:
+   application:
+    name: microservice-agentserver-performance-8001   #注册进eureka的微服务名称，将显示为大写
+   
+      
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://eureka9001.com:9001/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9003.com:9003/eureka/
+  instance:
+    instance-id: microservice-agentserver-performance-8001   #自定义相关的服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
