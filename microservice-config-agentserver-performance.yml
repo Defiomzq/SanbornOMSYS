@@ -10,6 +10,8 @@ spring:
   profiles: agent8001   #
   application:
     name: microservice-config-agentserver-performance 
+  thymeleaf:
+       cache: false
   
       
 eureka:
